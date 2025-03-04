@@ -1,0 +1,218 @@
+/********* Reset *********/
+
+/* Reset default browser styles and set a universal box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/********* Font family *********/
+
+/******** Poppins ********/
+
+/* Light font style */
+@font-face {
+    font-family: "Poppins-Light";
+    src: url(../fonts/popins/Poppins-Light.ttf);
+}
+
+/* Extra light font style */
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url(../fonts/popins/Poppins-ExtraLight.ttf);
+}
+
+/******** MartelSans ********/
+
+/* Regular font style */
+@font-face {
+    font-family: "MartelSans-Regular";
+    src: url(../fonts/martelsans/MartelSans-Regular.ttf);
+}
+
+/* Bold font style */
+@font-face {
+    font-family: "MartelSans-Bold";
+    src: url(../fonts/martelsans/MartelSans-Bold.ttf);
+}
+
+/* Set base font size to 10px for easy rem calculations */
+/* Needed for chrome text size parameter */
+html {
+    font-size: 62.5%;
+}
+
+/********** General Structure **********/
+
+/* Container for layout width */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Structure for sections */
+.row {
+    width: 100%;
+    margin: 7rem 0;
+}
+
+/********** Buttons **********/
+
+/* Style for primary action buttons */
+.primary-btn {
+    display: block;
+    text-align: center;
+    color: #3F4255;
+    font-family: "MartelSans-Bold";
+    text-decoration: none;
+    font-size: 1.6rem; 
+    width: 12rem;
+    height: 7.2rem;
+    padding: 2rem;  
+    line-height: 2rem;  
+    border: solid 1px #FFE145;
+}
+
+/* Smaller font for button subtext */
+.primary-btn span {
+    font-family: "MartelSans-Regular";
+    font-size: 1.2rem; 
+}
+
+/********** Header **********/
+
+/* Header row layout */
+header .rowhead {
+    margin-bottom: 1rem;
+    height: 7rem;
+    padding: 2.5rem 0;
+}
+
+/* Header column layout */
+.column-1, .column-2, .column-3 {
+    display: inline-block;
+}
+
+.column-1 {
+    width: 15%;
+    text-align: center;
+}
+
+.column-2 {
+    width: 55%;
+}
+
+.column-3 {
+    width: 28%;
+}
+
+/* Navigation icons in header */
+.column-3 nav ul li {
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+
+/* Adds spacing between navigation items */
+.column-3 nav ul li:nth-child(2) {
+    padding: 0 5rem;
+}
+
+/****************************** Main ******************************/
+
+/********** Banner Section **********/
+
+/* Call to action (CTA) section */
+.cta {
+    width: 48%;
+    margin-top: 7rem;
+}
+
+/* Banner image section */
+.banner-image {
+    width: 51%;
+}
+
+/* Align CTA and banner image side by side */
+.cta, .banner-image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Styling for main heading */
+h1 {
+    font-family: "Poppins-Light";
+    font-size: 5.8rem;
+    line-height: 6.4rem;
+    letter-spacing: 0.5rem;
+    color: #3F4255;
+    text-align: left;
+    max-width: 54rem;
+}
+
+/* Style for buttons in CTA section */
+.cta .primary-btn {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+
+/* Ensures banner images are resizable */
+.container-banner .banner-image img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/******************************* Restaurant Section *******************************/
+
+/* Spacing for restaurant section */
+.container-restaurant {
+    margin-top: 7rem;
+}
+
+/* Adjusts spacing between elements */
+.container-restaurant .row {
+    margin: 3rem 0;
+}
+
+/* Styling for section headings */
+h2 {
+    font-family: "Poppins-Light";
+    font-size: 3.6rem;
+    line-height: 6.4rem;
+    color: #3F4255;
+    text-align: left;
+    letter-spacing: 0.5rem;
+}
+
+/* Defines individual restaurant card container */
+.cell {
+    width: 24.8%;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+}
+
+/* Sets card size */
+.card {
+    width: 29.6rem;
+    height: 29.6rem;
+}
+
+/* Adjusts top part of restaurant card */
+.card .cardtop {
+    height: 18.4rem;
+}
+
+/* Rounds the top edges of card images */
+.card .cardtop img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Adjusts bottom part of restaurant card */
+.card .cardbot {
+    height: 11.2rem;
+}
